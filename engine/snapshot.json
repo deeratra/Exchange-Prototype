@@ -1,0 +1,407 @@
+{
+  "orderbooks": [
+    {
+      "baseAsset": "BTC",
+      "bids": [
+        {
+          "price": 1000.5,
+          "quantity": 1,
+          "orderId": "v3ospmn608nefrx9dx68km",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 999.8,
+          "quantity": 1,
+          "orderId": "7869tih7gpgc97u78e5xq",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 1000.7,
+          "quantity": 1,
+          "orderId": "goyvw4onku7u0e2c0y9gm",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 1000.4,
+          "quantity": 1,
+          "orderId": "f4xul60ufyl6e2vehy4hmv",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 999.8,
+          "quantity": 1,
+          "orderId": "83et2agnah4c3ufqn2im6d",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 1000.5,
+          "quantity": 1,
+          "orderId": "c305axascnstap6ne06w0l",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 999.9,
+          "quantity": 1,
+          "orderId": "sjj78in672m93hr6cqrzme",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 1000.6,
+          "quantity": 1,
+          "orderId": "7tqoz7edtsl3uer02l3q3p",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 1000.1,
+          "quantity": 1,
+          "orderId": "ebqfpy22srlau9oph6nl4l",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 1000.5,
+          "quantity": 1,
+          "orderId": "d4109og7q9pdkxhrrv2fpc",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 1000.6,
+          "quantity": 1,
+          "orderId": "fzqdtolofin2iq4wskojp",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        }
+      ],
+      "asks": [
+        {
+          "price": 1009.4,
+          "quantity": 1,
+          "orderId": "o2wfbnl7tqi6jkk4i5q35",
+          "filled": 0,
+          "side": "sell",
+          "userId": "1"
+        },
+        {
+          "price": 1007.3,
+          "quantity": 1,
+          "orderId": "qddnkj93dh9jnyi8awiak",
+          "filled": 0,
+          "side": "sell",
+          "userId": "1"
+        },
+        {
+          "price": 1007.7,
+          "quantity": 1,
+          "orderId": "q1qm83f33jhkar6jxevdx",
+          "filled": 0,
+          "side": "sell",
+          "userId": "1"
+        },
+        {
+          "price": 1007.1,
+          "quantity": 1,
+          "orderId": "q8k2lof4dsf1arvqs4evic",
+          "filled": 0,
+          "side": "sell",
+          "userId": "1"
+        },
+        {
+          "price": 1001.5,
+          "quantity": 1,
+          "orderId": "7sjkdzii9fpk9wlvimul3",
+          "filled": 0,
+          "side": "sell",
+          "userId": "1"
+        }
+      ],
+      "lastTradeId": 128,
+      "currentPrice": 1000.5
+    },
+    {
+      "baseAsset": "SOL",
+      "bids": [
+        {
+          "price": 245.5,
+          "quantity": 1,
+          "orderId": "a1bcdefg1234xyz5678mno",
+          "filled": 0,
+          "side": "buy",
+          "userId": "1"
+        },
+        {
+          "price": 243.8,
+          "quantity": 1,
+          "orderId": "b2hijklm5678xyz9012pqr",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 247.2,
+          "quantity": 1,
+          "orderId": "c3opqrst1234xyz8901stu",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 244.7,
+          "quantity": 1,
+          "orderId": "d4vwxyz4567mno8901fgh",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 242.9,
+          "quantity": 1,
+          "orderId": "e5rstuvw1234abc5678def",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 246.0,
+          "quantity": 1,
+          "orderId": "f6yzabcd4567pqr1234ghi",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 243.6,
+          "quantity": 1,
+          "orderId": "g7mnopqr5678uvw1234jkl",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 249.3,
+          "quantity": 1,
+          "orderId": "h8stuvwx1234rst5678lmn",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 241.8,
+          "quantity": 1,
+          "orderId": "i9xyzabc4567uvw8901nop",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 248.5,
+          "quantity": 1,
+          "orderId": "j0abcxyz1234rst5678uvw",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        },
+        {
+          "price": 244.9,
+          "quantity": 1,
+          "orderId": "k1defghi8901mnop4567xyz",
+          "filled": 0,
+          "side": "buy",
+          "userId": "5"
+        }
+      ],
+      "asks": [
+        {
+          "price": 249.4,
+          "quantity": 1,
+          "orderId": "l2mnopqr1234uvw5678rst",
+          "filled": 0,
+          "side": "sell",
+          "userId": "5"
+        },
+        {
+          "price": 248.2,
+          "quantity": 1,
+          "orderId": "m3xyzabc4567nop8901uvw",
+          "filled": 0,
+          "side": "sell",
+          "userId": "5"
+        },
+        {
+          "price": 246.7,
+          "quantity": 1,
+          "orderId": "n4uvwxyz1234abc5678nop",
+          "filled": 0,
+          "side": "sell",
+          "userId": "5"
+        },
+        {
+          "price": 247.5,
+          "quantity": 1,
+          "orderId": "o5qrstuvw4567xyz8901abc",
+          "filled": 0,
+          "side": "sell",
+          "userId": "5"
+        },
+        {
+          "price": 245.0,
+          "quantity": 1,
+          "orderId": "p6rstuvw1234mnop5678def",
+          "filled": 0,
+          "side": "sell",
+          "userId": "5"
+        }
+      ],
+      "lastTradeId": 128,
+      "currentPrice": 245.5
+    },
+    {
+      "baseAsset": "ETH",
+      "bids": [
+        {
+          "price": 3100.5,
+          "quantity": 1,
+          "orderId": "eth1abc123def456ghi789jkl",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3098.7,
+          "quantity": 1,
+          "orderId": "eth2mno456pqr789stu123vwx",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3101.2,
+          "quantity": 1,
+          "orderId": "eth3rst567uvw890xyz123abc",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3099.9,
+          "quantity": 1,
+          "orderId": "eth4xyz890abc123def456ghi",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3100.8,
+          "quantity": 1,
+          "orderId": "eth5uvw567rst890xyz123mno",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3102.3,
+          "quantity": 1,
+          "orderId": "eth6pqr789xyz123rst567uvw",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3097.6,
+          "quantity": 1,
+          "orderId": "eth7abc123uvw456rst789xyz",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3101.5,
+          "quantity": 1,
+          "orderId": "eth8mno456uvw123rst789xyz",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3100.0,
+          "quantity": 1,
+          "orderId": "eth9def456uvw789rst123mno",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        },
+        {
+          "price": 3102.0,
+          "quantity": 1,
+          "orderId": "eth10rst123uvw456xyz789abc",
+          "filled": 0,
+          "side": "buy",
+          "userId": "10"
+        }
+      ],
+      "asks": [
+        {
+          "price": 3105.0,
+          "quantity": 1,
+          "orderId": "eth11xyz123uvw456rst789mno",
+          "filled": 0,
+          "side": "sell",
+          "userId": "10"
+        },
+        {
+          "price": 3103.7,
+          "quantity": 1,
+          "orderId": "eth12uvw789xyz123rst456abc",
+          "filled": 0,
+          "side": "sell",
+          "userId": "10"
+        },
+        {
+          "price": 3104.5,
+          "quantity": 1,
+          "orderId": "eth13rst123uvw789xyz456def",
+          "filled": 0,
+          "side": "sell",
+          "userId": "10"
+        },
+        {
+          "price": 3106.1,
+          "quantity": 1,
+          "orderId": "eth14uvw456xyz789rst123abc",
+          "filled": 0,
+          "side": "sell",
+          "userId": "10"
+        },
+        {
+          "price": 3102.8,
+          "quantity": 1,
+          "orderId": "eth15xyz123rst456uvw789mno",
+          "filled": 0,
+          "side": "sell",
+          "userId": "10"
+        }
+      ],
+      "lastTradeId": 256,
+      "currentPrice": 3100.5
+    }
+  ]
+}
