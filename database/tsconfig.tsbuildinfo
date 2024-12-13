@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/types.ts"],"version":"5.6.3"}
+{"root":["./src/dbmanager.ts","./src/index.ts","./src/seed-db.ts","./src/types.ts"],"version":"5.6.3"}

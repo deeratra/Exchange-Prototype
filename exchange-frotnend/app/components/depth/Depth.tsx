@@ -1,4 +1,4 @@
-import { getDepth, getTicker } from "@/app/utils/httpClient";
+import { getDepth, getTicker, getTrades } from "@/app/utils/httpClient";
 import { useEffect, useState } from "react";
 import { AskTable } from "./AskTable";
 import { BidTable } from "./BidTable";
@@ -25,7 +25,7 @@ export const Depth = ({ market }: { market: string }) => {
     fetchDepth();
 
     const fetchTrade = async () => {
-      const data = [];
+      const data = await getTrades(market);
       setTrades(data);
     };
 

@@ -192,12 +192,6 @@ export class Engine {
           console.log(e);
         }
         break;
-      case GET_TRADES:
-        try{
-          const orderBook = this.orderBooks.find((order) => order.ticker() === message.data.market);
-          if (!orderBook) throw new Error("Order book not found");
-          const trades = orderBook.getTrades();
-        }
     }
   }
 
@@ -244,7 +238,7 @@ export class Engine {
       executedQty
     );
 
-    this.createDBTrades(fills, market, userId);
+    this.createDBTrades(fills, market, userId, side);
 
     this.publishWSDepthUpdates(fills, price, side, market);
     if (fills.length > 0) {
@@ -357,7 +351,8 @@ export class Engine {
     });
   }
 
-  createDBTrades(fills: Fill[], market: string, userId: string) {
+  createDBTrades(fills: Fill[], market: string, userId: string, side: string) {
+    const isBuyerMaker = side === "sell";
     fills.forEach((fill) => {
       RedisManager.getInstance().pushMessages({
         type: "TRADE_ADDED",
@@ -368,7 +363,7 @@ export class Engine {
           quantity: fill.quantity.toString(),
           quoteQuantity: (Number(fill.price) * fill.quantity).toString(),
           timestamp: Date.now(),
-          isBuyerMaker: fill.otherUserId === userId,
+          isBuyerMaker: isBuyerMaker,
         },
       });
     });
@@ -479,6 +474,7 @@ export class Engine {
       a: fill.otherUserId,
       e: "trade",
     }));
+    console.log("Trades happened:", trades);
     trades.forEach((trade) => {
       RedisManager.getInstance().publishMessage(`trade.${market}`, {
         stream: `trade.${market}`,

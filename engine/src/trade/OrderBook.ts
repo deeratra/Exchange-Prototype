@@ -127,6 +127,7 @@ export class OrderBook {
 
     for (let i = 0; i < this.bids.length; i++) {
       const bid = this.bids[i];
+
       if (bid.price >= order.price && executedQty < order.quantity) {
         const filledQuantity = Math.min(
           order.quantity - executedQty,
@@ -248,9 +249,5 @@ export class OrderBook {
       this.asks.splice(index, 1);
       return price;
     }
-  }
-
-  getTrades(){
-    
   }
 }
