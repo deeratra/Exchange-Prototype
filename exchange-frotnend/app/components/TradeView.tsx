@@ -13,7 +13,7 @@ export const TradeView = ({ market }: { market: string }) => {
     try {
       kLineData = await getKLines(
         market,
-        "1h",
+        "1m",
         Math.floor((new Date().getTime() - 1000 * 60 * 60 * 24 * 7) / 1000), //last week data
         Math.floor(new Date().getTime() / 1000)
       );

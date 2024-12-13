@@ -2,8 +2,7 @@ import axios from "axios";
 
 import { Depth, KLine, Ticker, Trade } from "./types";
 
-const BASE_URL =
-  "http://localhost:3000/api/v1";
+const BASE_URL = "http://localhost:3000/api/v1";
 
 export async function getTicker(market: string): Promise<Ticker> {
   const tickers = await getTickers();
@@ -47,8 +46,9 @@ export async function getKLines(
   endTime: number
 ): Promise<KLine[]> {
   const response = await axios.get(
-    `${BASE_URL}/klines?symbol=${market}&interval=${interval}&startTime=${startTime}&endTime=${endTime}`
+    `${BASE_URL}/klines?market=${market}&interval=${interval}&startTime=${startTime}&endTime=${endTime}`
   );
   const data: KLine[] = response.data;
+  console.log("KLine Data", data);
   return data.sort((x, y) => (Number(x.end) < Number(y.end) ? -1 : 1));
 }

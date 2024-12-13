@@ -12,6 +12,7 @@ export const Depth = ({ market }: { market: string }) => {
   const [asks, setAsks] = useState<[string, string][]>();
   const [trades, setTrades] = useState<Trade[]>([]);
   const [type, setType] = useState<"depth" | "trade">("depth");
+  const [isBuyerMaker, setIsBuyerMaker] = useState(false);
 
   const [price, setPrice] = useState<string>();
 
@@ -62,7 +63,7 @@ export const Depth = ({ market }: { market: string }) => {
           });
           return updatedAsks.sort((a, b) => Number(a[0]) - Number(b[0]));
         });
-        setPrice(data.lastPrice);
+        // setPrice(data.lastPrice);
       },
       `DEPTH-${market}`
     );
@@ -82,6 +83,8 @@ export const Depth = ({ market }: { market: string }) => {
           }
           return updatedTrades;
         });
+        setPrice(data.price);
+        setIsBuyerMaker(data.isBuyerMaker);
       },
       `TRADE-${market}`
     );
@@ -129,9 +132,17 @@ export const Depth = ({ market }: { market: string }) => {
         {type === "depth" ? (
           <div>
             <TableHeader />
-            <div className="overflow-y-auto h-[420px] hide-scrollbar">
+            <div className="overflow-y-auto h-[420px] flex flex-col justify-center hide-scrollbar">
               {asks && <AskTable asks={asks} />}
-              {price && <div>{price}</div>}
+              {price && (
+                <div
+                  className={`p-2 text-xs font-bold w-full ${
+                    isBuyerMaker ? "text-red-500" : "text-green-500"
+                  }`}
+                >
+                  {price}
+                </div>
+              )}
               {bids && <BidTable bids={bids} />}
             </div>
           </div>
