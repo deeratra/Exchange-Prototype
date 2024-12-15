@@ -70,6 +70,7 @@ export async function getMarketDataFromCoinGecko(symbol: string) {
     const response = await axios.get(url);
     return response.data[0];
   } catch (e) {
+    console.log(e);
     return null;
   }
 }
@@ -87,6 +88,7 @@ export async function getChartData(symbol: string) {
     console.log("Response", response.data);
     return response.data.prices;
   } catch (e) {
+    console.log(e);
     return null;
   }
 }
