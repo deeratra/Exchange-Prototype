@@ -42,9 +42,9 @@ A cryptocurrency exchange platform built with **Next.js**, **Express**, **Redis*
 
 ## Running the application
 
-- Frontend - npm run dev
-- API server - tsc -b && node dist/index.js
-- Engine - tsc -b && node dist/index.js
-- WS - tsc - b && node dist/index.js
-- database- tsc -b && node dist/index.js
+- Frontend - `npm run dev`
+- API server - `tsc -b && node dist/index.js`
+- Engine - `tsc -b && node dist/index.js`
+- WS - `tsc - b && node dist/index.js`
+- database- `tsc -b && node dist/index.js`
 - Run the redis and timescale db through docker images
