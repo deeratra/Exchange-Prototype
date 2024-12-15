@@ -10,8 +10,6 @@ A cryptocurrency exchange platform built with **Next.js**, **Express**, **Redis*
 2. [Tech Stack](#tech-stack)
 3. [Setup and Installation](#setup-and-installation)
 4. [Running the Application](#running-the-application)
-5. [Docker Setup](#docker-setup)
-6. [Deployment](#deployment)
 
 ---
 
@@ -38,6 +36,15 @@ A cryptocurrency exchange platform built with **Next.js**, **Express**, **Redis*
 - **Queue**:
   - **Redis Queue** (for managing async tasks)
 - **Containerization**:
-  - **Docker** (for local development and deployment)
+  - **Docker** (for local development)
 
 ---
+
+## Running the application
+
+- Frontend - npm run dev
+- API server - tsc -b && node dist/index.js
+- Engine - tsc -b && node dist/index.js
+- WS - tsc - b && node dist/index.js
+- database- tsc -b && node dist/index.js
+- Run the redis and timescale db through docker images
