@@ -44,7 +44,7 @@ function initializeDB() {
         SELECT create_hypertable('trades', 'timestamp', 'market_id', 4);
     `);
         yield client.query(`
-      CREATE MATERIALIZED VIEW IF NOT EXISTS klines_1m AS
+      CREATE MATERIALIZED  VIEW IF NOT EXISTS klines_1m AS
       SELECT
           time_bucket('1 minute', timestamp) AS bucket,
           market_id,
@@ -58,7 +58,7 @@ function initializeDB() {
       GROUP BY bucket, market_id
     `);
         yield client.query(`
-      CREATE MATERIALIZED VIEW IF NOT EXISTS klines_1h AS
+      CREATE MATERIALIZED  VIEW IF NOT EXISTS klines_1h AS
       SELECT
           time_bucket('1 hour', timestamp) AS bucket,
           market_id,
@@ -72,7 +72,7 @@ function initializeDB() {
       GROUP BY bucket, market_id
     `);
         yield client.query(`
-      CREATE MATERIALIZED VIEW IF NOT EXISTS klines_1w AS
+      CREATE MATERIALIZED  VIEW IF NOT EXISTS klines_1w AS
       SELECT
           time_bucket('1 week', timestamp) AS bucket,
           market_id,

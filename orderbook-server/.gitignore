@@ -8,6 +8,7 @@
 
 # Build output
 build/
+dist/
 
 # OS-specific files
 .DS_Store

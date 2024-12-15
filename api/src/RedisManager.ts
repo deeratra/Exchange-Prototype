@@ -8,9 +8,14 @@ export class RedisManager {
   private static instance: RedisManager;
 
   private constructor() {
-    this.client = createClient(); // Listen to the subscription of the pubsub
+    this.client = createClient({
+      url: 'redis://redis:6379' // Connect to the 'redis' container on port 6379
+    });
     this.client.connect();
-    this.publisher = createClient(); // Push something to the queue
+
+    this.publisher = createClient({
+      url: 'redis://redis:6379' // Same for publisher, use the 'redis' service
+    });
     this.publisher.connect();
   }
 

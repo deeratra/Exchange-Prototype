@@ -1,0 +1,40 @@
+version: "3.7"
+
+services:
+  api_image:
+    build:
+      context: ./api
+    ports:
+      - "3000:3000"
+    networks:
+      - app_redis_network
+    environment:
+      - POSTGRES_HOST=timescaledb # Optionally set these as environment variables
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=exchange
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - app_redis_network
+  
+  timescaledb:
+    image: timescale/timescaledb:latest-pg12
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: exchange
+    ports:
+      - "5432:5432"
+    networks:
+      - app_redis_network
+
+networks:
+  app_redis_network:
+    driver: bridge

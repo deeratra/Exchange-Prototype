@@ -92,6 +92,7 @@ export async function getKLines(
 }
 
 async function getMarketId(market: string) {
+  try{
   const result = await client.query(
     "SELECT market_id FROM markets WHERE market_id = $1"
   );
@@ -99,4 +100,9 @@ async function getMarketId(market: string) {
     throw new Error("Market not found");
   }
   return result.rows[0].market_id;
+}
+catch(e){
+  console.log(e);
+  throw new Error("Cannot find Market")
+}
 }
