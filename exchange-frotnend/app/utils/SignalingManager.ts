@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Ticker, Trade } from "./types";
 
 // export const BASE_URL = "wss://ws.backpack.exchange/";

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable prefer-const */
 export const AskTable = ({ asks }: { asks: [string, string][] }) => {
   let currentTotal = 0;
   const relevantAsks = asks.slice(0, 15);
@@ -31,7 +33,6 @@ export const AskTable = ({ asks }: { asks: [string, string][] }) => {
 };
 
 function Ask({
-  maxTotal,
   quantity,
   price,
   total,

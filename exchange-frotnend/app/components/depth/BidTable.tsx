@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable prefer-const */
 export const BidTable = ({ bids }: { bids: [string, string][] }) => {
   let currentTotal = 0;
   const relevantBids = bids.slice(0, 15);

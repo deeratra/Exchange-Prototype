@@ -1,7 +1,6 @@
 "use server";
 
 import { Ticker } from "../utils/types";
-import { getTickers } from "../utils/httpClient";
 import {
   getMarketDataFromCoinGecko,
   getTickersForCoinGecko,

@@ -1,11 +1,7 @@
-import { useEffect, useState } from "react";
 import { Trade } from "../utils/types";
-import { getTrades } from "@/app/utils/httpClient";
-import { SignalingManager } from "../utils/SignalingManager";
 
-export const TradeTable = ({ market, trades }: { market: string, trades: Trade[] }) => {
+export const TradeTable = ({ trades }: { trades: Trade[] }) => {
   // const [trades, setTrades] = useState<Trade[]>([]);
-
 
   return (
     <div className="relative bg-gray-900 rounded-lg overflow-hidden">

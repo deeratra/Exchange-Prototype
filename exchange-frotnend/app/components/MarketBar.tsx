@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { Ticker } from "../utils/types";
 import { getTicker } from "../utils/httpClient";
-import { SignalingManager } from "../utils/SignalingManager";
 import { MarketSelect } from "./MarketSelect";
 
 export const MarketBar = ({

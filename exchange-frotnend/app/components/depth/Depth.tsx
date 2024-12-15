@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getDepth, getTicker, getTrades } from "@/app/utils/httpClient";
 import { useEffect, useState } from "react";
 import { AskTable } from "./AskTable";
@@ -147,7 +148,7 @@ export const Depth = ({ market }: { market: string }) => {
             </div>
           </div>
         ) : (
-          <TradeTable market={market as string} trades={trades} />
+          <TradeTable trades={trades} />
         )}
       </div>
     </>

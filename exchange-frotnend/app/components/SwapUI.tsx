@@ -17,7 +17,7 @@ export const SwapUI = ({ market }: { market: string }) => {
   ) {
     console.log("Market", market);
     console.log("Quantity", quantity);
-    const data = await createMarketOrder({
+    await createMarketOrder({
       market,
       quantity,
       price,

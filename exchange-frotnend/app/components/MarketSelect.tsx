@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { redirect } from "next/navigation";
 import React, { useState } from "react";
 
